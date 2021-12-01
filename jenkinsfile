@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('execute shell') { 
             steps {
-                sh 'file.sh'
+                echo "from main branch"
             }
         }
     }
