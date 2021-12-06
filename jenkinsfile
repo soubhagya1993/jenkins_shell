@@ -1,14 +1,15 @@
 pipeline {
     agent any
 
-    parameters {
-        choice(name: 'branch', choices: ['main','dev'])
-    }
+#    parameters {
+#        choice(name: 'branch', choices: ['main','dev'])
+#    }
 
     stages {
         stage('execute shell') { 
             steps {
-                echo "from dev branch"
+                sum = $a + $b
+                echo $sum
             }
         }
     }
