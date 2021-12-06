@@ -1,9 +1,9 @@
 pipeline {
     agent any
 
-#    parameters {
-#        choice(name: 'branch', choices: ['main','dev'])
-#    }
+//    parameters {
+//        choice(name: 'branch', choices: ['main','dev'])
+//    }
 
     stages {
         stage('execute shell') { 
