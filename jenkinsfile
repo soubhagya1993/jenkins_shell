@@ -8,8 +8,8 @@ pipeline {
     stages {
         stage('execute shell') { 
             steps {
-                sh 'sum=`expr $a + $b`'
-                echo "$sum"
+                sh 'sum=`expr $a + $b` && echo $sum'
+                
             }
         }
     }
