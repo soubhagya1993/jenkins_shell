@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('execute shell') { 
             steps {
-                sum = $a + $b
+                sh 'sum=`expr $a + $b`'
                 echo $sum
             }
         }
